@@ -5,13 +5,15 @@ import { NextRequest } from "next/server";
 
 const resolvers = {
   Query: {
-    hello: () => "world",
+    server: () => "server",
+    client: () => "client",
   },
 };
 
 const typeDefs = gql`
   type Query {
-    hello: String
+    server: String
+    client: String
   }
 `;
 
