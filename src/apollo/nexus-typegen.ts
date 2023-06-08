@@ -4,7 +4,7 @@
  */
 
 
-import type { HttpContext } from "./../src/server/context/index"
+import type { HttpContext } from "./../server/context/index"
 import type { core, connectionPluginCore } from "nexus"
 declare global {
   interface NexusGenCustomInputMethods<TypeName extends string> {

@@ -6,7 +6,7 @@ import * as Mutation from "../server/graphql/mutations";
 import { GraphqlDate } from "../server/graphql/types/date";
 import { GraphqlDateTime } from "../server/graphql/types/date-time";
 
-const dirName = join(process.cwd(), "apollo");
+const dirName = join(process.cwd(), "/src/apollo");
 // Recursively traverses the value passed to types looking for
 // any valid Nexus or graphql-js objects to add to the schema,
 // so you can be pretty flexible with how you import types here.
