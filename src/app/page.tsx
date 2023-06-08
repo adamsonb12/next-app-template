@@ -1,4 +1,4 @@
-import { Stupid } from "@/@components/stupid";
+import { Stupid } from "@/components/stupid";
 
 export default function Home() {
   return (

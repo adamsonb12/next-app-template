@@ -1,0 +1,56 @@
+import { ThemeBreakPoints, ThemeFontSize, ThemeSpacing } from "./types";
+
+export const defaultSpacing: ThemeSpacing = {
+  spacing1: "0.0625rem",
+  spacing2: "0.125rem",
+  spacing4: "0.25rem",
+  spacing8: "0.5rem",
+  spacing12: "0.75rem",
+  spacing16: "1rem",
+  spacing20: "1.25rem",
+  spacing24: "1.625rem",
+  spacing32: "2rem",
+  spacing48: "3rem",
+  spacing64: "4rem",
+  spacing80: "5rem",
+  spacing96: "6rem",
+  spacing128: "8rem",
+  spacing160: "10rem",
+  spacing192: "12rem",
+  spacing224: "14rem",
+  spacing256: "16rem",
+  spacing288: "18rem",
+  spacing320: "20rem",
+  spacing384: "24rem",
+  spacing448: "28rem",
+  spacing512: "32rem",
+  spacing768: "48rem",
+  spacing1024: "64rem",
+};
+
+export const defaultFontSize: ThemeFontSize = {
+  fontSize10: "0.625rem",
+  fontSize12: "0.75rem",
+  fontSize14: "0.875rem",
+  fontSize16: "1rem",
+  fontSize18: "1.125rem",
+  fontSize20: "1.25rem",
+  fontSize22: "1.375rem",
+  fontSize24: "1.5rem",
+  fontSize26: "1.625rem",
+  fontSize28: "1.75rem",
+  fontSize54: "3.375rem",
+  fontSize72: "4.5rem",
+};
+
+export const defaultBreakPoints: ThemeBreakPoints = {
+  breakWidth340: "21.5em",
+  breakWidth360: "22.5em",
+  breakWidth480: "30em",
+  breakWidth540: "33.75em",
+  breakWidth630: "39.375em",
+  breakWidth720: "45em",
+  breakWidth1024: "64em",
+  breakWidth1280: "80em",
+  breakWidth1600: "100em",
+};
