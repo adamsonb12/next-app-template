@@ -1,1 +1,9 @@
-export class StarterService {}
+export class StarterService {
+  getServer() {
+    return "server";
+  }
+
+  getClient() {
+    return "client";
+  }
+}
