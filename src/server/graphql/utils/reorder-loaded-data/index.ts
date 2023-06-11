@@ -1,5 +1,3 @@
-import { Schedule } from "../../services/schedule/types";
-
 export function reorderLoadedData<T extends { id: string }>(
   ids: string[] | readonly string[],
   entities: T[]
