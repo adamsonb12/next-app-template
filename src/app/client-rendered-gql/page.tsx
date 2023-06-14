@@ -7,7 +7,7 @@ import gql from "graphql-tag";
 
 const query = gql`
   query Client {
-    client
+    getClient
   }
 `;
 
