@@ -1,7 +1,7 @@
-import "styled-components/native";
+import "styled-components";
 import { ThemeColors, ThemeFonts } from "./types";
 
-declare module "styled-components/native" {
+declare module "styled-components" {
   export interface DefaultTheme {
     colors: ThemeColors;
     fonts: ThemeFonts;
