@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components/native";
+import { DefaultTheme } from "styled-components";
 
 import { defaultThemeColors, defaultThemeFonts } from "./default";
 
