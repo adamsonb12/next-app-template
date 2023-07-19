@@ -1,4 +1,4 @@
-import { ThemeColors, ThemeFonts } from "../types";
+import { ThemeColors } from "../types";
 
 export const defaultThemeColors: ThemeColors = {
   primary: "#3E71DE",
@@ -10,29 +10,10 @@ export const defaultThemeColors: ThemeColors = {
   text: "#000",
   textLight: "#FFF",
   disabled: "#D7E3F5",
-  neutral: "#7C94C4",
+  neutral: "#e6e6e6",
   placeholder: "#7C94C4",
   backdrop: "rgba(0,0,0,0.5)",
   white: "#FFF",
   black: "#000",
   link: "#6AD7FF",
-};
-
-export const defaultThemeFonts: ThemeFonts = {
-  bold: "bold",
-  boldItalic: "boldItalic",
-  extraBold: "extraBold",
-  extraBoldItalic: "extraBoldItalic",
-  extraLight: "extraLight",
-  extraLightItalic: "extraLightItalic",
-  italic: "italic",
-  light: "light",
-  lightItalic: "lightItalic",
-  medium: "medium",
-  mediumItalic: "mediumItalic",
-  regular: "regular",
-  semiBold: "semiBold",
-  semiBoldItalic: "semiBoldItalic",
-  thin: "thin",
-  thinItalic: "thinItalic",
 };

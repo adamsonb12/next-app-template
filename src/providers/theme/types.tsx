@@ -15,22 +15,3 @@ export interface ThemeColors {
   black: string;
   link: string;
 }
-
-export interface ThemeFonts {
-  bold: string;
-  boldItalic: string;
-  extraBold: string;
-  extraBoldItalic: string;
-  extraLight: string;
-  extraLightItalic: string;
-  italic: string;
-  light: string;
-  lightItalic: string;
-  medium: string;
-  mediumItalic: string;
-  regular: string;
-  semiBold: string;
-  semiBoldItalic: string;
-  thin: string;
-  thinItalic: string;
-}
