@@ -1,5 +1,8 @@
 import { Translation } from "./types";
 
 export const ENTranslation: Translation = {
-  example: "Example",
+  genericErrorTitle: "Uh oh, something broke!",
+  genericErrorConfirm: "OK",
+  notFoundTitle: "Page Not Found",
+  notFoundConfirm: "OK",
 };

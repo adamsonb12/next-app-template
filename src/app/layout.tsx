@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import { ClientProviders } from "./providers";
+import { Metadata } from "next";
+import { Main } from "@/components/main";
 
 const swyfFont = localFont({
   src: [
@@ -99,6 +101,10 @@ const swyfFont = localFont({
   display: "swap",
 });
 
+export const metadata: Metadata = {
+  title: "Next Starter Template",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -119,7 +125,7 @@ export default function RootLayout({
         }}
       >
         <ClientProviders>
-          <main>{children}</main>
+          <Main>{children}</Main>
         </ClientProviders>
       </body>
     </html>
