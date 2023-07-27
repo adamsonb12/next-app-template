@@ -62,7 +62,7 @@ export const InformationCard = ({
       <MainContentSection>{children}</MainContentSection>
 
       <StyledLink passHref href={editLink}>
-        <EditButton>{getTranslation("dataContainerEdit")}</EditButton>
+        <EditButton>Edit</EditButton>
       </StyledLink>
     </Container>
   );
@@ -79,7 +79,7 @@ export const InformationCardLoading = ({
     <Container>
       <MainContentSection>{children}</MainContentSection>
 
-      <EditButton>{getTranslation("accountPersonalInfoEdit")}</EditButton>
+      <EditButton>Edit</EditButton>
     </Container>
   );
 };

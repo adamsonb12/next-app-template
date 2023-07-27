@@ -23,3 +23,4 @@ export const spacing448 = "28rem";
 export const spacing512 = "32rem";
 export const spacing768 = "48rem";
 export const spacing1024 = "64rem";
+export const spacing2000 = "125rem";

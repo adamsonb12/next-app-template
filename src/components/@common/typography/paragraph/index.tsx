@@ -16,13 +16,13 @@ export const Paragraph = styled.p`
     font-weight: 900;
   }
   & a {
-    color: ${(props) => props.theme.colors.link};
+    color: ${(props) => props.theme.colors.primary};
     text-decoration: underline;
     cursor: pointer;
   }
   & em,
   & i {
-    color: ${(props) => props.theme.colors.textLight};
+    color: ${(props) => props.theme.colors.textSecondary};
   }
   & + & {
     margin-top: ${spacing8};

@@ -116,6 +116,7 @@ const NumberField = ({
   useEffect(() => {
     checkCursorPosition();
     updateMaskedValueIfValueHasUpdatedExternally();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value, previousInput]);
 
   const handleChange = (event: any) => {

@@ -23,7 +23,7 @@ export const TableHead = styled.thead`
 
 export const TableBody = styled.tbody`
   & > :nth-child(even) {
-    background: ${(props) => props.theme.colors.disabled};
+    background: ${(props) => props.theme.colors.codeBlockBackground};
   }
 `;
 
@@ -60,7 +60,7 @@ export const MobileTableCardsContainer = styled.div`
   gap: ${spacing16};
   padding: ${spacing16};
   & > :nth-child(even) {
-    background: ${(props) => props.theme.colors.disabled};
+    background: ${(props) => props.theme.colors.codeBlockBackground};
   }
 
   @media screen and (min-width: ${breakWidth720}) {

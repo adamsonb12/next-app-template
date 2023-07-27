@@ -1,12 +1,12 @@
 "use client";
 
-import { IconButton } from "@common/buttons/icon";
 import { mdiEye, mdiEyeOff } from "@mdi/js";
 import Icon from "@mdi/react";
 import { InputHTMLAttributes, useState } from "react";
 import styled, { useTheme } from "styled-components";
 import { TextInput } from "../text-input";
 import { spacing64 } from "@common/spacing";
+import { IconButton } from "@common/buttons/icon";
 
 const InputWrapper = styled.div`
   width: 100%;

@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import { ClientProviders } from "./providers";
 import { Metadata } from "next";
-import { Main } from "@/components/main";
+import "./global.css";
 
 const swyfFont = localFont({
   src: [
@@ -114,19 +114,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={swyfFont.className}>
       <head />
-      <body
-        style={{
-          minHeight: "100vh",
-          minWidth: "100vw",
-          backgroundColor: "#FFF",
-          margin: 0,
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <ClientProviders>
-          <Main>{children}</Main>
-        </ClientProviders>
+      <body>
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

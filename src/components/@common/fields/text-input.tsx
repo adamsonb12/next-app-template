@@ -7,10 +7,8 @@ import styled, { keyframes } from "styled-components";
 export const TextInput = styled.input.attrs(() => ({ type: "text" }))<{
   hasError?: boolean;
 }>`
-  background-color: ${(props) => props.theme.colors.background};
-  border: 1px solid
-    ${(props) =>
-      props.hasError ? props.theme.colors.danger : props.theme.colors.neutral};
+  background-color: ${(props) => props.theme.colors.codeBlockBackground};
+  border: none;
   border-radius: 4px;
   caret-color: ${(props) => props.theme.colors.text};
   color: ${(props) => props.theme.colors.text};
@@ -19,14 +17,20 @@ export const TextInput = styled.input.attrs(() => ({ type: "text" }))<{
   padding: ${spacing12} ${spacing16};
   width: 100%;
   box-sizing: border-box;
+  font-family: ${(props) => props.theme.misc.codeFontFamily};
+
+  :focus {
+    outline-color: ${(props) => props.theme.colors.primary};
+    outline-style: solid;
+  }
 
   :disabled {
     cursor: not-allowed;
-    background-color: ${(props) => props.theme.colors.disabled};
+    opacity: 0.8;
   }
 
   ::placeholder {
-    color: ${(props) => props.theme.colors.placeholder};
+    color: ${(props) => props.theme.colors.textSecondary};
   }
 `;
 
@@ -71,10 +75,8 @@ const LoadingInput = styled.input.attrs(() => ({
 }))<{
   hasError?: boolean;
 }>`
-  background-color: ${(props) => props.theme.colors.background};
-  border: 1px solid
-    ${(props) =>
-      props.hasError ? props.theme.colors.danger : props.theme.colors.neutral};
+  background-color: ${(props) => props.theme.colors.codeBlockBackground};
+  border: none;
   border-radius: 4px;
   caret-color: ${(props) => props.theme.colors.text};
   color: ${(props) => props.theme.colors.text};
@@ -83,14 +85,21 @@ const LoadingInput = styled.input.attrs(() => ({
   padding: ${spacing12} ${spacing16};
   width: 100%;
   box-sizing: border-box;
+  outline-color: ${(props) => props.theme.colors.primary};
+  font-family: ${(props) => props.theme.misc.codeFontFamily};
+
+  :focus {
+    outline-color: ${(props) => props.theme.colors.primary};
+    outline-style: solid;
+  }
 
   :disabled {
     cursor: not-allowed;
-    background-color: ${(props) => props.theme.colors.disabled};
+    opacity: 0.8;
   }
 
   ::placeholder {
-    color: ${(props) => props.theme.colors.placeholder};
+    color: ${(props) => props.theme.colors.textSecondary};
   }
 `;
 

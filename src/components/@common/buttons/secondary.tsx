@@ -1,17 +1,24 @@
 "use client";
 
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, useTheme } from "styled-components";
 import { A11y } from "./a11y";
 import { spacing4, spacing48 } from "@common/spacing";
+import { ButtonLoading } from "./botton-loading";
 
-export const SecondaryButton = styled(A11y)`
-  background-color: ${(props) => props.theme.colors.background};
-  border-color: ${(props) => props.theme.colors.primary};
+export const StyledButton = styled(A11y)`
+  background-color: ${(props) => props.theme.colors.text};
+  border-color: ${(props) => props.theme.colors.text};
   color: ${(props) => props.theme.colors.primary};
 
   :hover {
     filter: brightness(0.85);
   }
+
+  :disabled {
+    opacity: 0.69;
+  }
+
+  position: relative;
 `;
 
 const LoadingButtonContainer = styled.div`
@@ -23,6 +30,26 @@ const LoadingButtonContainer = styled.div`
   position: relative;
   overflow: hidden;
 `;
+
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  loading?: boolean;
+}
+
+export const SecondaryButton = ({
+  loading,
+  disabled,
+  children,
+  ...props
+}: ButtonProps) => {
+  const { colors } = useTheme();
+
+  return (
+    <StyledButton {...props} disabled={!!loading || disabled}>
+      {children}
+      {loading && <ButtonLoading />}
+    </StyledButton>
+  );
+};
 
 const kf = keyframes`
   from {

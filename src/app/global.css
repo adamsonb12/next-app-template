@@ -1,0 +1,65 @@
+/* The prupose for this and the other .css files is for server side rendered content, to speed up loading times */
+
+:root {
+  --theme-colors-background: hsl(0, 0%, 8%);
+  --theme-colors-primary: #dd22cc;
+  --theme-colors-success: #8dd815;
+  --theme-colors-danger: #ff3247;
+  --theme-colors-text: #fff;
+  --theme-colors-text-secondary: rgba(255, 255, 255, 0.6);
+  --theme-colors-border: hsla(0, 0%, 100%, 0.07);
+  --theme-colors-code-block-background: hsla(0, 0%, 100%, 0.08);
+
+  --theme-input-font-family: Menlo, Monaco, "Courier New", monospace;
+
+  --font-size-10: 0.625rem;
+  --font-size-12: 0.75rem;
+  --font-size-14: 0.875rem;
+  --font-size-16: 1rem;
+  --font-size-18: 1.125rem;
+  --font-size-20: 1.25rem;
+  --font-size-22: 1.375rem;
+  --font-size-24: 1.5rem;
+  --font-size-26: 1.625rem;
+  --font-size-28: 1.75rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-48: 3rem;
+  --font-size-54: 3.375rem;
+  --font-size-72: 4.5rem;
+
+  --header-height: 80px;
+  --navigation-aside-width: 11em;
+  --navigation-dropdown-container-height: 2em;
+  --navigation-desktop-margin: 2em;
+
+  /* break points */
+  --break-width-340: 21.5em;
+  --break-width-360: 22.5em;
+  --break-width-480: 30em;
+  --break-width-540: 33.75em;
+  --break-width-630: 39.375em;
+  --break-width-720: 45em;
+  --break-width-880: 55em;
+  --break-width-1024: 64em;
+  --break-width-1280: 80em;
+  --break-width-1600: 100em;
+
+  @media screen and (min-width: 80em) {
+    --navigation-aside-width: 15em;
+  }
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: var(--theme-colors-background);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-size: var(--font-size-16);
+  color: var(--theme-colors-text);
+  font-weight: 400;
+}

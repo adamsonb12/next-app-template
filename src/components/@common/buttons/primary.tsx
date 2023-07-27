@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, useTheme } from "styled-components";
 import { A11y } from "./a11y";
 import { ButtonLoading } from "./botton-loading";
 import { spacing4, spacing48 } from "@common/spacing";
@@ -9,10 +9,14 @@ import { spacing4, spacing48 } from "@common/spacing";
 const StyledButton = styled(A11y)`
   background-color: ${(props) => props.theme.colors.primary};
   border-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.textLight};
+  color: ${(props) => props.theme.colors.text};
 
   :hover {
     filter: brightness(0.85);
+  }
+
+  :disabled {
+    opacity: 0.69;
   }
 
   position: relative;
@@ -22,11 +26,18 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
 }
 
-export const PrimaryButton = ({ loading, children, ...props }: ButtonProps) => {
+export const PrimaryButton = ({
+  loading,
+  disabled,
+  children,
+  ...props
+}: ButtonProps) => {
+  const { colors } = useTheme();
+
   return (
-    <StyledButton {...props} disabled={!!loading}>
+    <StyledButton {...props} disabled={!!loading || disabled}>
       {children}
-      {loading && <ButtonLoading />}
+      {loading && <ButtonLoading color={colors.text} />}
     </StyledButton>
   );
 };

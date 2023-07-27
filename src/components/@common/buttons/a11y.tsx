@@ -1,6 +1,6 @@
 "use client";
 import styled from "styled-components";
-import { spacing12, spacing16, spacing4, spacing8 } from "../spacing";
+import { spacing12, spacing24, spacing8 } from "../spacing";
 import { fontSize16 } from "../font-size";
 
 export const A11y = styled.button.attrs((props) => ({
@@ -10,17 +10,17 @@ export const A11y = styled.button.attrs((props) => ({
 }>`
   background-color: ${(props) => props.theme.colors.primary};
   border-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.textLight};
+  border: none;
+  color: ${(props) => props.theme.colors.text};
   cursor: ${(props) => (props.loading ? "not-allowed" : "pointer")};
   border-radius: ${spacing12};
-  padding: ${spacing8} ${spacing16};
+  padding: ${spacing12} ${spacing24};
   margin: 0;
   width: 100%;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  outline: 0px;
   vertical-align: middle;
   appearance: none;
   text-decoration: none;
@@ -29,7 +29,12 @@ export const A11y = styled.button.attrs((props) => ({
   font-weight: 500;
   font-size: ${fontSize16};
   line-height: 1.75;
-  letter-spacing: 0.02857em;
+  letter-spacing: 0.075em;
+
+  :focus {
+    outline-color: ${(props) => props.theme.colors.primary};
+    outline-style: solid;
+  }
 
   /* for transitions on hover */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
