@@ -1,19 +1,17 @@
-import { ThemeColors } from "../types";
+import { ThemeColors, ThemeMisc } from "../types";
 
 export const defaultThemeColors: ThemeColors = {
-  primary: "#3E71DE",
-  accent: "#FF00A6",
-  success: "#5ABF2F",
-  danger: "#FF5E1E",
-  warning: "#FCCE00",
-  background: "#FFF",
-  text: "#000",
-  textLight: "#FFF",
-  disabled: "#D7E3F5",
-  neutral: "#e6e6e6",
-  placeholder: "#7C94C4",
-  backdrop: "rgba(0,0,0,0.5)",
-  white: "#FFF",
-  black: "#000",
-  link: "#6AD7FF",
+  background: "hsl(0, 0%, 8%)",
+  primary: "#dd22cc",
+  success: "#8DD815",
+  danger: "#FF3247",
+  text: "#fff",
+  textSecondary: "rgba(255, 255, 255, 0.6)",
+  border: "hsla(0, 0%, 100%, 0.07)",
+  backdrop: "hsla(0, 0%, 100%, 0.1)",
+  codeBlockBackground: "hsla(0, 0%, 100%, 0.08)",
+};
+
+export const defaultThemeMisc: ThemeMisc = {
+  codeFontFamily: 'Menlo, Monaco, "Courier New", monospace',
 };

@@ -78,6 +78,7 @@ export const ValidationCodeInput = ({
     if (ref.current) {
       ref.current.focus();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref.current]);
 
   return (

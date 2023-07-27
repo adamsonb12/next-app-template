@@ -1,3 +1,5 @@
+"use client";
+
 import { fontSize12, fontSize14 } from "@common/font-size";
 import { spacing8 } from "@common/spacing";
 import { Paragraph } from "@common/typography/paragraph";
@@ -48,10 +50,11 @@ export const FieldLabel = styled(Paragraph)`
   margin-left: ${spacing8};
   font-style: italic;
   font-size: ${fontSize14};
+  color: ${(props) => props.theme.colors.textSecondary};
 `;
 
 export const FieldClarifier = styled(Paragraph)`
   margin-left: ${spacing8};
   font-size: ${fontSize12};
-  color: ${(props) => props.theme.colors.neutral};
+  color: ${(props) => props.theme.colors.textSecondary};
 `;

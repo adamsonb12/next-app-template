@@ -23,10 +23,10 @@ const SpinnerContainer = styled.div<SpinnerProps>`
     width: 80%;
     height: 80%;
     border: ${(props) => props.thickness ?? "8px"} solid
-      ${(props) => props.color ?? props.theme.colors.white};
+      ${(props) => props.color ?? props.theme.colors.primary};
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: ${(props) => props.color ?? props.theme.colors.white}
+    border-color: ${(props) => props.color ?? props.theme.colors.primary}
       transparent transparent transparent;
   }
   .lds-ring div:nth-child(1) {

@@ -1,0 +1,34 @@
+.headerContainer {
+  --active-opacity: 0.5;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  flex-flow: column nowrap;
+}
+
+.headerContent {
+  height: var(--header-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1em;
+  border-bottom: thin solid var(--theme-colors-border);
+  background-color: var(--theme-colors-background);
+}
+
+.headerLink {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.headerTitle {
+  font-weight: 600;
+  color: var(--theme-colors-text);
+  font-size: var(--font-size-20);
+}

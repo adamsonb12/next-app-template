@@ -8,7 +8,7 @@ export const TextArea = styled.textarea<{
   background-color: ${(props) => props.theme.colors.background};
   border: 1px solid
     ${(props) =>
-      props.hasError ? props.theme.colors.danger : props.theme.colors.neutral};
+      props.hasError ? props.theme.colors.danger : props.theme.colors.text};
   border-radius: 4px;
   caret-color: ${(props) => props.theme.colors.text};
   color: ${(props) => props.theme.colors.text};
@@ -17,13 +17,19 @@ export const TextArea = styled.textarea<{
   padding: ${spacing12} ${spacing16};
   width: 100%;
   box-sizing: border-box;
+  font-family: ${(props) => props.theme.misc.codeFontFamily};
+
+  :focus {
+    outline-color: ${(props) => props.theme.colors.primary};
+    outline-style: solid;
+  }
 
   :disabled {
     cursor: not-allowed;
-    background-color: ${(props) => props.theme.colors.disabled};
+    opacity: 0.8;
   }
 
   ::placeholder {
-    color: ${(props) => props.theme.colors.placeholder};
+    color: ${(props) => props.theme.colors.textSecondary};
   }
 `;

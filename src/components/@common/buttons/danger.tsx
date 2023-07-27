@@ -9,7 +9,7 @@ import { spacing4, spacing48 } from "@common/spacing";
 const StyledButton = styled(A11y)`
   background-color: ${(props) => props.theme.colors.danger};
   border-color: ${(props) => props.theme.colors.danger};
-  color: ${(props) => props.theme.colors.textLight};
+  color: ${(props) => props.theme.colors.text};
 
   :hover {
     filter: brightness(0.85);

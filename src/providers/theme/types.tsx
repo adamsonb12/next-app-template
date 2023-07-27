@@ -1,17 +1,15 @@
 export interface ThemeColors {
+  background: string;
   primary: string;
-  accent: string;
   success: string;
   danger: string;
-  warning: string;
-  background: string;
   text: string;
-  textLight: string;
-  disabled: string;
-  neutral: string;
-  placeholder: string;
+  textSecondary: string;
+  border: string;
+  codeBlockBackground: string;
   backdrop: string;
-  white: string;
-  black: string;
-  link: string;
+}
+
+export interface ThemeMisc {
+  codeFontFamily: string;
 }
