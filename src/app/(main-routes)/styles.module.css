@@ -20,6 +20,7 @@
   margin-top: var(--navigation-dropdown-container-height);
   overflow-y: scroll;
   padding-bottom: 3em;
+  min-height: calc(100vh - var(--header-height));
 
   @media screen and (min-width: 55em) {
     margin-top: var(--navigation-desktop-margin);
