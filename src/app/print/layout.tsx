@@ -6,10 +6,8 @@ export default function ReadPagesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <main className={styles.mainContainer}>
-        <section className={styles.gridContent}>{children}</section>
-      </main>
-    </>
+    <div className={styles.content}>
+      <section className={styles.gridContent}>{children}</section>
+    </div>
   );
 }

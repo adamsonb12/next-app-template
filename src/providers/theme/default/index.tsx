@@ -1,11 +1,12 @@
 import { ThemeColors, ThemeMisc } from "../types";
 
 export const defaultThemeColors: ThemeColors = {
-  background: "hsl(0, 0%, 8%)",
+  background: "#fff",
   primary: "#dd22cc",
   success: "#8DD815",
   danger: "#FF3247",
-  text: "#fff",
+  text: "hsl(0, 0%, 8%)",
+  muted: "hsl(0, 0%, 52.54901960784314%)",
   textSecondary: "rgba(255, 255, 255, 0.6)",
   border: "hsla(0, 0%, 100%, 0.07)",
   backdrop: "hsla(0, 0%, 100%, 0.1)",

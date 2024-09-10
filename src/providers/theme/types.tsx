@@ -4,6 +4,7 @@ export interface ThemeColors {
   success: string;
   danger: string;
   text: string;
+  muted: string;
   textSecondary: string;
   border: string;
   codeBlockBackground: string;

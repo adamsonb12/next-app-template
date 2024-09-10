@@ -53,13 +53,26 @@
 body {
   min-height: 100vh;
   min-width: 100%;
-  background-color: var(--theme-colors-background);
+  background-color: var(--theme-colors-text);
   margin: 0;
   padding: 0;
 }
 
 main {
   font-size: var(--font-size-16);
-  color: var(--theme-colors-text);
+  color: var(--theme-colors-background);
   font-weight: 400;
+}
+
+progress[value] {
+   /* Reset the default appearance */
+   -moz-appearance: none;
+   appearance: none;
+
+   /* leave defaults in for other browsers */
+   background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: orange;
 }

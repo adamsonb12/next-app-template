@@ -1,0 +1,31 @@
+.desktopNavigation {
+  grid-area: navigation;
+  display: none;
+
+  @media screen and (min-width: 55em) {
+    display: grid;
+    color: var(--theme-colors-text-secondary);
+    margin-top: var(--navigation-desktop-margin);
+    overflow-y: scroll;
+    align-content: flex-start;
+    gap: 1em;
+  }
+}
+
+.mobileNavigation {
+  position: fixed;
+  top: var(--header-height);
+  display: flex;
+  height: var(--navigation-dropdown-container-height);
+  align-items: center;
+
+  @media screen and (min-width: 55em) {
+    display: none;
+  }
+}
+
+.categoryTitle {
+  font-weight: 600;
+  color: var(--theme-colors-text);
+  margin: 0;
+}
