@@ -499,3 +499,45 @@ export const PublishedApps = () => {
     </div>
   );
 };
+
+export const Mentoring = () => {
+  return (
+    <div>
+      <Heading5>Mentoring</Heading5>
+      <hr />
+      <Heading4>
+        <MobileAppWrapper>
+          <Paragraph>
+            <List>
+              <li
+                style={{
+                  fontSize: fontSize12,
+                }}
+              >
+                Guided two developers from the Road 2 Hire program (Charlotte,
+                NC) through mentorship until securing full-time employment
+                (2022).
+              </li>
+              <li
+                style={{
+                  fontSize: fontSize12,
+                }}
+              >
+                Mentored two developers from DevMountain (Salt Lake City, UT)
+                through to successful job placement (2018, 2023).
+              </li>
+              <li
+                style={{
+                  fontSize: fontSize12,
+                }}
+              >
+                Provided mentorship to a self-taught developer (Atlanta, GA),
+                supporting them until they secured employment (2019).
+              </li>
+            </List>
+          </Paragraph>
+        </MobileAppWrapper>
+      </Heading4>
+    </div>
+  );
+};

@@ -15,6 +15,7 @@ import {
   Education,
   PublishedApps,
   ZenaSummary,
+  Mentoring,
 } from "./components";
 
 const List = styled.ul`
@@ -100,6 +101,7 @@ export default function RootPage() {
             <AvailitySummary />
             <Education />
             <PublishedApps />
+            <Mentoring />
           </Column>
         </Experience>
         <Aside>
