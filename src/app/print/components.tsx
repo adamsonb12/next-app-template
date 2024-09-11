@@ -505,7 +505,7 @@ export const PublishedApps = () => {
 export const Mentoring = () => {
   return (
     <div>
-      <Heading5>Mentoring</Heading5>
+      <Heading5>Leadership & Mentorship</Heading5>
       <hr />
       <Heading4>
         <MobileAppWrapper>
