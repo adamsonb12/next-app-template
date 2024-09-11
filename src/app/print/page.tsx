@@ -79,7 +79,7 @@ export default function RootPage() {
             </li>
             <li>
               Expertise in developing web applications using <Bold>React</Bold>,{" "}
-              <Bold>NextJS</Bold>, and <Bold>GraphQL</Bold>.
+              <Bold>Next.js</Bold>, and <Bold>GraphQL</Bold>.
             </li>
             <li>
               Skilled in building mobile applications with{" "}

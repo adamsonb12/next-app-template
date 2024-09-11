@@ -366,7 +366,7 @@ export const Strengths = () => {
         <Label>GraphQL</Label>
         <Label>Nexus (GQL)</Label>
         <Label>GRPC</Label>
-        <Label>NextJs</Label>
+        <Label>Next.js</Label>
         <Label>Prisma</Label>
         <Label>Postgres</Label>
         <Label>Expo</Label>
@@ -478,6 +478,13 @@ export const PublishedApps = () => {
                   fontSize: fontSize12,
                 }}
               >
+                Built with Expo, Next.js, and Postgres.
+              </li>
+              <li
+                style={{
+                  fontSize: fontSize12,
+                }}
+              >
                 Organize and oversee pickup basketball games.
               </li>
               <li
@@ -486,13 +493,6 @@ export const PublishedApps = () => {
                 }}
               >
                 Notify participants about upcoming games.
-              </li>
-              <li
-                style={{
-                  fontSize: fontSize12,
-                }}
-              >
-                Update users with any changes to the status of games.
               </li>
             </List>
           </Paragraph>
