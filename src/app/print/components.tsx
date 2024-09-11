@@ -364,6 +364,8 @@ export const Strengths = () => {
         <Label>Java</Label>
         <Label>Kotlin</Label>
         <Label>GraphQL</Label>
+        <Label>Nexus (GQL)</Label>
+        <Label>GRPC</Label>
         <Label>NextJs</Label>
         <Label>Prisma</Label>
         <Label>Postgres</Label>
