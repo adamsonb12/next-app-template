@@ -363,7 +363,7 @@ export const Strengths = () => {
         <Label>TypeScript</Label>
         <Label>Java</Label>
         <Label>Kotlin</Label>
-        <Label>GraphQL</Label>
+        <Label>GraphQL / REST</Label>
         <Label>Nexus (GQL)</Label>
         <Label>GRPC</Label>
         <Label>Next.js</Label>
@@ -372,7 +372,9 @@ export const Strengths = () => {
         <Label>Expo</Label>
         <Label>React Native</Label>
         <Label>React</Label>
-        <Label>Styled Components</Label>
+        <Label>CSS-in-JS</Label>
+        <Label>Server Side rendering</Label>
+        <Label>Jest</Label>
       </SidebarColumn>
     </div>
   );
