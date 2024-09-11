@@ -485,14 +485,24 @@ export const PublishedApps = () => {
                   fontSize: fontSize12,
                 }}
               >
-                Organize and oversee pickup basketball games.
+                Maintained a beta group of 75 active users over 18 months,
+                gathering feedback and iterating on features.
               </li>
               <li
                 style={{
                   fontSize: fontSize12,
                 }}
               >
-                Notify participants about upcoming games.
+                Enabled users to organize and manage pickup basketball games
+                efficiently.
+              </li>
+              <li
+                style={{
+                  fontSize: fontSize12,
+                }}
+              >
+                Implemented real-time notifications to keep participants updated
+                on upcoming games and any changes.
               </li>
             </List>
           </Paragraph>
