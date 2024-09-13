@@ -10,13 +10,14 @@ import {
   AeonSummary,
   ChurchSummary,
   AvailitySummary,
-  Strengths,
+  Skills,
   Contacts,
   Education,
   PublishedApps,
   ZenaSummary,
   Mentoring,
 } from "./components";
+import { Paragraph } from "@common/typography/paragraph";
 
 const List = styled.ul`
   margin: 0;
@@ -63,53 +64,43 @@ export default function RootPage() {
         Jason Hamm
       </Heading1>
       <Contacts />
-      <Grid>
-        <Experience>
-          <Heading5>Summary</Heading5>
-          <hr />
-          <List>
-            <li>
-              Full stack developer with 12 years of experience in{" "}
-              <Bold>JavaScript</Bold>, <Bold>Typescript</Bold>, and the Front
-              End ecosystem.
-            </li>
-            <li>
-              Extensive experience working with <Bold>Java</Bold>; currently
-              liking <Bold>Kotlin</Bold> a lot.
-            </li>
-            <li>
-              Expertise in developing web applications using <Bold>React</Bold>,{" "}
-              <Bold>Next.js</Bold>, and <Bold>GraphQL</Bold>.
-            </li>
-            <li>
-              Skilled in building mobile applications with{" "}
-              <Bold>React Native</Bold>, <Bold>Expo</Bold>, and{" "}
-              <Bold>GraphQL</Bold>.
-            </li>
-            <li>
-              Experienced leader invested in mentoring and guiding other
-              developers.
-            </li>
-          </List>
-          <Heading5 style={{ marginTop: spacing32 }}>Experience</Heading5>
-          <hr />
-          <Column>
-            <ZenaSummary />
-            <SwyfSummary />
-            <AeonSummary />
-            <ChurchSummary />
-            <AvailitySummary />
-            <Education />
-            <PublishedApps />
-            <Mentoring />
-          </Column>
-        </Experience>
-        <Aside>
-          <AsideColumn>
-            <Strengths />
-          </AsideColumn>
-        </Aside>
-      </Grid>
+      <Experience>
+        <Heading5>Summary</Heading5>
+        <hr />
+        <Paragraph>
+          I am a full-stack developer with 12 years of experience, focused on
+          team velocity, delivering, and user-focused solutions. Specializing in{" "}
+          <Bold>React</Bold>, <Bold>Next.js</Bold>, <Bold>Expo</Bold>, and{" "}
+          <Bold>GraphQL</Bold> to create seamless web and mobile experiences. I
+          excel at collaborating with product leaders to refine complex ideas
+          into core features. I have been involved in three startups,
+          successfully guiding three distinct products through to production.
+          With a robust background in backend development using{" "}
+          <Bold>Node</Bold>, <Bold>Java</Bold>, and <Bold>Kotlin</Bold>, I bring
+          a comprehensive skill set to every project. Additionally, as a mentor,
+          I have successfully guided five developers from novice to full-time
+          employment.
+        </Paragraph>
+        <div
+          style={{
+            marginTop: 10,
+          }}
+        >
+          <Skills />
+        </div>
+        <Heading5 style={{ marginTop: spacing32 }}>Experience</Heading5>
+        <hr />
+        <Column>
+          <ZenaSummary />
+          <SwyfSummary />
+          <AeonSummary />
+          <ChurchSummary />
+          <AvailitySummary />
+          <Education />
+          <PublishedApps />
+          <Mentoring />
+        </Column>
+      </Experience>
     </>
   );
 }

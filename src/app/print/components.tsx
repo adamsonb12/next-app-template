@@ -47,11 +47,12 @@ const Column = styled.div`
   gap: ${spacing2};
 `;
 
-const SidebarColumn = styled.div`
+const SkillsRow = styled.div`
   margin-top: ${spacing16};
   display: flex;
-  flex-direction: column;
   gap: ${spacing20};
+  flex-wrap: wrap;
+  align-items: center;
 `;
 const List = styled.ul`
   margin: 0;
@@ -353,16 +354,17 @@ const PageBreak = styled.div`
   }
 `;
 
-export const Strengths = () => {
+export const Skills = () => {
   return (
     <div>
       <Heading5>Skills</Heading5>
       <hr />
-      <SidebarColumn>
+      <SkillsRow style={{}}>
         <Label>JavaScript</Label>
         <Label>TypeScript</Label>
         <Label>Java</Label>
         <Label>Kotlin</Label>
+        <Label>Node</Label>
         <Label>GraphQL/REST</Label>
         <Label>Nexus (GQL)</Label>
         <Label>GRPC</Label>
@@ -374,8 +376,7 @@ export const Strengths = () => {
         <Label>React</Label>
         <Label>CSS-in-JS</Label>
         <Label>Server Side rendering</Label>
-        <Label>Jest</Label>
-      </SidebarColumn>
+      </SkillsRow>
     </div>
   );
 };
