@@ -2,6 +2,7 @@
 
 import { fontSize10, fontSize12, fontSize14 } from "@common/font-size";
 import {
+  spacing12,
   spacing16,
   spacing2,
   spacing20,
@@ -21,6 +22,10 @@ const SmallParagraph = styled(Paragraph)`
   font-size: ${fontSize10};
 `;
 
+const SmallLabel = styled(Label)`
+  font-size: 10px;
+`;
+
 export const Muted = styled.div`
   font-size: ${fontSize14};
   letter-spacing: -0.015em;
@@ -30,6 +35,12 @@ export const Muted = styled.div`
 const Row = styled.div`
   display: flex;
   gap: ${spacing24};
+  align-items: center;
+`;
+
+const SmallRow = styled.div`
+  display: flex;
+  gap: ${spacing12};
   align-items: center;
 `;
 
@@ -58,6 +69,14 @@ const List = styled.ul`
   margin: 0;
   list-style-type: "- ";
 `;
+const Badge = styled.div`
+  background-color: #d3d4d48c;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export const ZenaSummary = () => {
   return (
@@ -68,7 +87,17 @@ export const ZenaSummary = () => {
           <Heading4>Senior Software Engineer</Heading4>
           <Row>
             <Label>Zena - San Francisco, CA</Label>
-            <Label>0 to 1</Label>
+            <SmallRow>
+              <Badge>
+                <SmallLabel>0 to 1</SmallLabel>
+              </Badge>
+              <Badge>
+                <SmallLabel>FinTech</SmallLabel>
+              </Badge>
+              <Badge>
+                <SmallLabel>B2B</SmallLabel>
+              </Badge>
+            </SmallRow>
           </Row>
         </Column>
         <DateColumn>
@@ -112,7 +141,14 @@ export const SwyfSummary = () => {
           <Heading4>Senior Software Engineer</Heading4>
           <Row>
             <Label>Swyf - South Jordan UT</Label>
-            <Label>0 to 1</Label>
+            <SmallRow>
+              <Badge>
+                <SmallLabel>0 to 1</SmallLabel>
+              </Badge>
+              <Badge>
+                <SmallLabel>FinTech</SmallLabel>
+              </Badge>
+            </SmallRow>
           </Row>
         </Column>
         <DateColumn>
@@ -166,7 +202,14 @@ export const AeonSummary = () => {
           <Heading4>Senior Software Engineer</Heading4>
           <Row>
             <Label>AeonAI - Lehi UT</Label>
-            <Label>0 to 1</Label>
+            <SmallRow>
+              <Badge>
+                <SmallLabel>0 to 1</SmallLabel>
+              </Badge>
+              <Badge>
+                <SmallLabel>Real Estate</SmallLabel>
+              </Badge>
+            </SmallRow>
           </Row>
         </Column>
         <DateColumn>
@@ -253,6 +296,11 @@ export const ChurchSummary = () => {
             <Label>
               The Church of Jesus Christ of Latter-day Saints - Riverton UT
             </Label>
+            <SmallRow>
+              <Badge>
+                <SmallLabel>Enterprise</SmallLabel>
+              </Badge>
+            </SmallRow>
           </Row>
         </Column>
         <DateColumn>
@@ -318,6 +366,11 @@ export const AvailitySummary = () => {
           <Heading4>Developer I</Heading4>
           <Row>
             <Label>Availity, LLC - Jacksonville FL</Label>
+            <SmallRow>
+              <Badge>
+                <SmallLabel>Insurance</SmallLabel>
+              </Badge>
+            </SmallRow>
           </Row>
         </Column>
         <DateColumn>
