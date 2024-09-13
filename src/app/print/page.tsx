@@ -1,6 +1,5 @@
 "use client";
 
-import { fontSize14 } from "@common/font-size";
 import { spacing24, spacing32, spacing4, spacing8 } from "@common/spacing";
 import { Heading1, Heading5 } from "@common/typography/heading";
 import styled from "styled-components";
@@ -18,23 +17,8 @@ import {
   Mentoring,
 } from "./components";
 import { Paragraph } from "@common/typography/paragraph";
+import { fontSize14 } from "@common/font-size";
 
-const List = styled.ul`
-  margin: 0;
-  font-size: ${fontSize14};
-  list-style-type: "- ";
-
-  & > * {
-    margin-bottom: ${spacing8};
-  }
-`;
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 80% 20%;
-  padding-top: ${spacing8};
-  gap: ${spacing32};
-`;
 const Bold = styled.span`
   font-weight: 500;
 `;
@@ -44,14 +28,6 @@ const Column = styled.div`
   flex-direction: column;
   gap: ${spacing24};
 `;
-
-const AsideColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${spacing32};
-`;
-
-const Aside = styled.div``;
 
 export default function RootPage() {
   return (
@@ -67,7 +43,11 @@ export default function RootPage() {
       <Experience>
         <Heading5>Summary</Heading5>
         <hr />
-        <Paragraph>
+        <Paragraph
+          style={{
+            fontSize: fontSize14,
+          }}
+        >
           I am a full-stack developer with 12 years of experience, focused on
           team velocity, delivering, and user-focused solutions. Specializing in{" "}
           <Bold>React</Bold>, <Bold>Next.js</Bold>, <Bold>Expo</Bold>, and{" "}
